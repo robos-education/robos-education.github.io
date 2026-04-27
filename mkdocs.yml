@@ -1,6 +1,43 @@
 site_name: My Tech Log
-site_url: http://127.0.0.1:8000
+# site_url: http://127.0.0.1:8000
 
 theme:
   name: material
   language: ko
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 어두운 테마로 전환
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 밝은 테마로 전환
+
+  font:
+    text: Noto Sans KR
+    code: Noto Sans Mono    # 한국어 지원 고정폭 폰트
+
+  icon:
+    logo: material/book-open-page-variant   # 파일로 만들어 설정할 수 있다.(assets/logo.png)
+    favicon: assets/favicon.png             # local에서 안보일 수 있다.
+
+  features:
+    - navigation.top           # 스크롤 내리면 맨 위로 버튼 표시
+    - navigation.footer        # 페이지 하단에 이전/다음 페이지 버튼
+    - navigation.tabs          # 상단에 탭 메뉴 표시
+    - search.highlight         # 검색 결과 강조
+    - search.suggest           # 검색 자동완성
+    - content.code.copy        # 코드 블록에 복사 버튼 추가
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Copyright &copy; 2026 삼산 Robos
+extra:
+  generator: false
