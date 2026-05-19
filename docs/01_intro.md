@@ -18,7 +18,7 @@ Web site는 **server**와 **client**가 서로 요청하고 응답하며 동작�
 Web browser의 주소창에 URL(Uniform Resource Locator)을 입력하면,  
 server가 파일(code)을 보내주고, browser가 실행한다.  
 
-![웹 서비스 구조](/images/website.png)  
+![웹 서비스 구조](images/website.png)  
 
 ---
 
