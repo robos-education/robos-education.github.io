@@ -1,0 +1,24 @@
+# workflow 이름 GitHub Actions tab에 표시된다.
+name: Deploy MkDocs
+
+# 작업
+on:
+  push:
+    branches:
+      - main    # 배포를 트리거할 branch name
+
+# GitHub Actions가 현재 repository에 Write 권한 부여(Actions에서 설정할 수도 있다.)
+permissions:
+  contents: write
+
+# 수행할 작업 설정
+jobs:
+  deploy:
+    runs-on: ubuntu-latest      # 작업이 실행되는 OS
+    steps:
+      - uses: actions/checkout@v4       # source code 설정
+      - uses: actions/setup-python@v5   # python 환경 설정(MkDocs 실행을 위해 필요)
+        with:
+          python-version: '3.x'
+      - run: pip install mkdocs-material        # 필요한 Library 설치
+      - run: mkdocs gh-deploy --force           # HTML을 빌드하고 GitHub Pages에 배포
