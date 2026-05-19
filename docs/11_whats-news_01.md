@@ -102,7 +102,9 @@ jobs:
         uses: actions/deploy-pages@v5
 ```
 
+>
 > `mkdocs gh-deploy`가 아니라 `mkdocs build`를 사용하는 것에 주의한다.
+>
 
 수정 후 오른쪽 위 **Commit changes** 클릭 → **Commit changes**
 
@@ -152,5 +154,6 @@ plugins:
 
 - name: Install dependencies
   run: pip install mkdocs-material mkdocs-redirects  # 👈 여기에 한 칸 띄고 추가해 줍니다!
+
 
 ```
