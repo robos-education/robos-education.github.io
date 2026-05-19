@@ -82,7 +82,7 @@ jobs:
 
       # 2. MkDocs 및 테마 의존성을 설치합니다.
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: pip install mkdocs-material mkdocs-redirects
 
       # 3. 마크다운 문서를 HTML 웹사이트로 빌드합니다. (site 폴더 생성)
       - name: Build with MkDocs
@@ -131,3 +131,26 @@ https://<username>.github.io
 전환이 완료되면 더 이상 사용하지 않는 `gh-pages` branch를 삭제할 수 있다.
 
 repository → **Code** 탭 → View all branches → `gh-pages` 오른쪽 휴지통 아이콘 클릭
+
+
+### 7. index.md redirection 설정  
+
+mkdocs.yml의 하단에 plugin block 추가
+
+```yml
+
+# 3. 플러그인 설정 (★redirect★)
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        'index.md': '01_intro.md'
+```
+배포 설정 파일(.github/workflow/static.yml)에서 mkdocs-redirects 설치 추가
+
+```yml
+
+- name: Install dependencies
+  run: pip install mkdocs-material mkdocs-redirects  # 👈 여기에 한 칸 띄고 추가해 줍니다!
+
+```
