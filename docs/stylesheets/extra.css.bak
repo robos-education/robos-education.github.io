@@ -1,0 +1,117 @@
+/* ----------------------------------------
+   색상 변수 재정의
+   Material 테마는 :root가 아닌
+   [data-md-color-scheme]으로 덮어써야 적용된다.
+---------------------------------------- */
+
+/* 밝은 테마 색상 */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #e91e63;        /* 상단 바 색상 */
+  --md-primary-bg-color: #cc7a95;        /* 상단 바 텍스트 색상 */
+}
+
+/* 어두운 테마 색상 */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #ea779d;
+  --md-primary-bg-color: #750d30;        /* 상단 바 텍스트 색상 */
+}
+/* ----------------------------------------
+   레이아웃
+---------------------------------------- */
+
+/* 본문 최대 너비 조정 */
+.md-content {
+  max-width: 860px;
+}
+
+/* ----------------------------------------
+   타이포그래피
+---------------------------------------- */
+
+/* 링크 색상 변경 */
+.md-typeset {
+    color: #888888;
+}
+.md-typeset a {
+  color: #e91e63;
+}
+/* 코드 블록 폰트 크기 */
+.md-typeset code {
+  font-size: 0.85em; /* 1em = 부모 폰트 크기, 0.85em = 85% */
+}
+
+/* 1. 푸터 바 전체의 높이와 여백 제거 */
+.md-footer {
+    display: block !important;    /* 얘도 블록으로 만들어서 제어권을 가져옵니다 */
+    padding: 5px 0 10px  !important;        /* 일단 기본 여백을 싹 지웁니다 */
+    min-height: 0 !important;
+    margin: 0px !important;
+
+}
+
+.md-footer__inner {
+    display: block !important;    
+    padding: 0 !important;        /* 일단 기본 여백을 싹 지웁니다 */
+    font-size: 0.8rem !important; /* 글자 크기 축소 */
+    min-height: 0 !important;
+    margin: 0px !important;
+}
+
+.md-footer__link {
+    display: block !important;    
+    padding: 0 !important;        /* 일단 기본 여백을 싹 지웁니다 */
+    min-height: 0 !important;
+    margin: 0px !important;
+    position: relative !important;
+}
+.md-footer__title {
+    display: flex !important;   
+    flex-direction: column !important;  /* 위아래로 쌓기 */ 
+    padding: 0px 10px 0px !important;        
+    min-height: 0 !important;
+    margin: 0px !important;
+    flex: 1 !important;                  
+    font-size: 0.7rem !important; /* 글자 크기 축소 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.md-footer__link.md-footer__link--next { 
+    padding-right: 0px !important; 
+    text-align: right;
+}
+
+.md-footer__link.md-footer__link--prev { 
+    padding-left: 40px !important; 
+    text-align: left; 
+}
+
+.md-footer__button.md-icon {
+    display: block !important;
+    position: absolute !important;
+    padding: 0;
+    margin: 0;
+    top: 55% !important;           /* 세로 중앙 */
+    transform: translateY(-50%) !important;
+    
+}
+
+.md-footer__link--next .md-footer__button.md-icon {
+    right: 15px !important;
+    left: auto !important;
+}
+
+/* 5. [이전] 화살표는 왼쪽 끝에 */
+.md-footer__link--prev .md-footer__button.md-icon {
+    left: 15px !important;
+    right: auto !important;
+}
+
+/* 2. 하단 검은색 바(Meta 영역) 높이 강제 고정 */
+.md-footer-meta__inner.md-grid, .md-copyright {
+    display: block !important;    /* 얘도 블록으로 만들어서 제어권을 가져옵니다 */
+    padding: 5px 0px 0px !important;        /* 일단 기본 여백을 싹 지웁니다 */
+    font-size: 0.6rem !important; /* 글자 크기 축소 */
+    text-align: center !important;
+}

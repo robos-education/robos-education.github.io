@@ -1,0 +1,22 @@
+# 1. 빌드 결과물 (가장 중요!)
+# 최신 Actions 방식을 쓰기로 했으므로, 내 컴퓨터에서 생긴 html 폴더는 올릴 필요가 없습니다.
+/site/
+
+# 2. 파이썬 가상환경 및 캐시
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# 3. 운영체제 설정 파일
+.DS_Store (Mac용)
+Thumbs.db (Windows용)
+
+# 4. 보안 민감 정보 (있을 경우)
+.env
+*.log
+
+# 5. 사용자 지정
+calculator/
+images/
