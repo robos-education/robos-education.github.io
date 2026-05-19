@@ -60,3 +60,10 @@ markdown_extensions:
 copyright: Copyright &copy; 2026 삼산 Robos
 extra:
   generator: false        # 하단에 MkDocs theme 표시하지 않음"
+
+# 3. 플러그인 설정 (★redirect★)
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        'index.md': '01_intro.md'
