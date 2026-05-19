@@ -1,5 +1,3 @@
 ---
-redirect: 01_intro.md
+redirect: 01_intro.html
 ---
-
-## 삼산 Robos Page
