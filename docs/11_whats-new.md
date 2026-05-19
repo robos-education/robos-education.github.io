@@ -39,21 +39,67 @@ repository → `Code` 탭 → `.github/workflows/deploy.yml` 클릭 → 오른�
 
 ### 3. 새 workflow 파일 생성
 
-Source를 변경하면 화면에 추천 설정 박스가 나타난다. **[Configure]** 버튼을 클릭하면 `.github/workflows/static.yml` 편집 화면으로 이동한다.
+Source를 변경하면 화면에 템플릿 카드들이 나타난다. **[Static HTML] 카드의 [Configure]** 버튼을 클릭하면 `.github/workflows/static.yml` 편집 화면으로 이동한다.
 
 ---
 
-### 4. workflow 파일 수정
+### 4. workflow 파일 수정(.github/workflows/static.yml)
 
 편집 화면에서 `steps:` 섹션을 찾아 아래 내용으로 교체한다.
 
 ```yaml
-      # MkDocs 테마 설치(기본 템플릿에 없으므로 추가한다.)
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 1. 가상 가상 서버에 파이썬을 설치합니다.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 2. MkDocs 및 테마 의존성을 설치합니다.
       - name: Install dependencies
         run: pip install mkdocs-material
 
+      # 3. 마크다운 문서를 HTML 웹사이트로 빌드합니다. (site 폴더 생성)
       - name: Build with MkDocs
         run: mkdocs build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 4. [핵심] 빌드 결과물인 'site' 폴더를 지정하여 업로드합니다.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
 ```
 
 > `mkdocs gh-deploy`가 아니라 `mkdocs build`를 사용하는 것에 주의한다.
@@ -84,4 +130,4 @@ https://<username>.github.io
 
 전환이 완료되면 더 이상 사용하지 않는 `gh-pages` branch를 삭제할 수 있다.
 
-repository → **Code** 탭 → branch 목록(branch 이름 옆 숫자 클릭) → `gh-pages` 오른쪽 휴지통 아이콘 클릭
+repository → **Code** 탭 → View all branches → `gh-pages` 오른쪽 휴지통 아이콘 클릭
