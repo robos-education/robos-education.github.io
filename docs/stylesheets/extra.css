@@ -11,7 +11,7 @@
   --md-typeset-color: #353535;              /* 연한 회색 본문 (가독성) */
   --md-typeset-a-color: #8b133b;            
   --md-accent-fg-color: #353535;            /* code block의 scrollbar에 적용된다.*/
-  --md-code-bg-color: rgbs(255, 255, 255, 0.7);
+  --md-code-bg-color: rgba(255, 255, 255, 0.7);
 
   /* 나머지 설정은 복잡하여 사용자 정의 변수를 만들고 공통 style block에서 불러오는 방식으로 작성한다.*/
 
@@ -37,7 +37,7 @@
   --md-typeset-color: #e0e0e0;           /* 연한 회색 본문 (가독성) */
   --md-typeset-a-color: #ff89a8; 
   --md-accent-fg-color: #e6e6e6;         /* code block의 scrollbar에 적용된다.*/
-  --md-code-bg-color: rgbs(255, 255, 255, 0.7);
+  --md-code-bg-color: rgba(255, 255, 255, 0.7);
 
   /* 나머지 설정은 복잡하여 사용자 정의 변수를 만들고 공통 style block에서 불러오는 방식으로 작성한다.*/
 
