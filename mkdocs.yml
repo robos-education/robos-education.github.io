@@ -1,6 +1,6 @@
 site_name: My Tech Log
 # site_url: https://robo-education.github.io
-site_decription: GitHub Page + MkDocs 설정 Note
+site_description: GitHub Page + MkDocs 설정 Note
 site_author: deoneo@naver.com
 
 repo_name: robos-education/robos-education.github.io
