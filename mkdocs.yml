@@ -67,3 +67,8 @@ plugins:
   - redirects:
       redirect_maps:
         'index.md': '01_intro.md'
+  - toggle-sidebar:
+      toggle_button: toc            # toc만 toggle ( 목차만 ), (toc, navigation, all)
+      show_toc_by_default: true     # 처음엔 보이게
+      button_toggle_toc_tooltip: "목차 보이기/숨기기"   # Mouse Over
+      # theme: material

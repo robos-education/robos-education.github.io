@@ -35,7 +35,7 @@ jobs:
 
       # 3. MkDocs 및 Material 테마 플러그인을 설치합니다.
       - name: Install dependencies
-        run: pip install mkdocs-material mkdocs-redirects
+        run: pip install mkdocs-material mkdocs-redirects mkdocs-toggle-sidebar-plugin
 
       # 4. 마크다운(.md) 문서들을 HTML 웹사이트로 빌드합니다. (site 폴더 생성)
       - name: Build with MkDocs

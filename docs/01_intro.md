@@ -43,12 +43,13 @@ VSCode에서 `index.html` 파일을 만들고 아래 내용을 작성하고 파�
     <p>이게 web page입니다.</p>
   </body>
 </html>
-```
-
+```  
+ 
 > 💡 Browser는 이 HTML 파일을 읽고 화면에 그려준다.  
-> 우리가 보는 모든 web page가 이런 형식으로 이루어져 있다.
+> 우리가 보는 모든 web page가 이런 형식으로 이루어져 있다.   
 
----
+---  
+
 ## 🎨 Web Page의 Design, CSS
 
 HTML만으로는 디자인을 표현하기 어렵다.  

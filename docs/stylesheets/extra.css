@@ -72,6 +72,18 @@
   font-weight: 700;        /* 글자 굵기 (보통 700이 Bold) */
 }
 
+/* 인용구(>) 위아래 공간 확보 */
+.md-typeset blockquote {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+/* blockquote와의 병합이 있어 유의해야 한다. */
+.md-typeset blockquote p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.85;
+}
+
 /* Footer의 공간 문제 설정 */
 .md-footer__link{
   margin-top: 0;

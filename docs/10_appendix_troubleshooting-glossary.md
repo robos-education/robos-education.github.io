@@ -1,16 +1,12 @@
-# 부록
-
----
-
-## 트러블슈팅
+# Troubleshooting and Glossary  
 
 설치나 배포 과정에서 막히는 상황을 모아뒀다. 오류 메시지를 잘 읽으면 대부분 원인을 찾을 수 있다.
 
 ---
 
-### 설치 · 환경
+## 설치 · 환경
 
-#### Python이 설치되어 있는데 `mkdocs` 명령이 안 된다
+### Python이 설치되어 있는데 `mkdocs` 명령이 안 된다
 
 `mkdocs`를 설치했지만 terminal에서 `command not found`가 뜨는 경우다.
 
@@ -22,7 +18,7 @@
 
 ---
 
-#### `pip install mkdocs-material` 중에 오류가 난다
+### `pip install mkdocs-material` 중에 오류가 난다
 
 **원인**: pip 자체가 오래된 버전이거나, 인터넷 연결이 불안정한 경우다.
 
@@ -35,7 +31,7 @@ pip를 먼저 최신 버전으로 업그레이드한 뒤 다시 설치한다.
 
 ---
 
-#### `mkdocs serve` 실행 후 web browser에서 페이지가 안 열린다
+### `mkdocs serve` 실행 후 web browser에서 페이지가 안 열린다
 
 **원인**: web browser에 주소를 잘못 입력한 경우다.
 
@@ -43,7 +39,7 @@ pip를 먼저 최신 버전으로 업그레이드한 뒤 다시 설치한다.
 
 ---
 
-#### `mkdocs serve`를 실행했는데 포트가 이미 사용 중이라고 한다
+### `mkdocs serve`를 실행했는데 포트가 이미 사용 중이라고 한다
 
 오류 메시지 예시:
 ```
@@ -59,9 +55,9 @@ mkdocs serve --dev-addr=127.0.0.1:8001
 
 ---
 
-### Markdown · MkDocs
+## Markdown · MkDocs
 
-#### 페이지를 추가했는데 사이트에 나타나지 않는다
+### 페이지를 추가했는데 사이트에 나타나지 않는다
 
 **원인**: `mkdocs.yml`의 `nav` 항목에 새 파일을 추가하지 않은 경우다.
 
@@ -74,7 +70,7 @@ nav:
 
 ---
 
-#### 이미지가 깨져서 나온다 (엑스 박스)
+### 이미지가 깨져서 나온다 (엑스 박스)
 
 **원인**: 이미지 파일 경로가 잘못됐거나, 파일이 `docs` 폴더 안에 없는 경우다.
 
@@ -87,7 +83,7 @@ nav:
 
 ---
 
-#### 줄바꿈이 반영되지 않는다
+### 줄바꿈이 반영되지 않는다
 
 **원인**: Markdown에서 줄바꿈은 Enter 한 번으로는 적용되지 않는다.
 
@@ -96,7 +92,7 @@ nav:
 
 ---
 
-#### 코드 블록이 제대로 표시되지 않는다
+### 코드 블록이 제대로 표시되지 않는다
 
 **원인**: 백틱(`` ` ``) 개수가 맞지 않거나, 코드 블록 앞뒤에 빈 줄이 없는 경우다.
 
@@ -104,9 +100,9 @@ nav:
 
 ---
 
-### Git · GitHub
+## Git · GitHub
 
-#### `git push` 후 GitHub Pages 사이트가 업데이트되지 않는다
+### `git push` 후 GitHub Pages 사이트가 업데이트되지 않는다
 
 **원인**: GitHub Actions가 배포를 완료하는 데 1~3분 정도 걸린다.
 
@@ -114,7 +110,7 @@ nav:
 
 ---
 
-#### GitHub Pages 주소로 들어갔는데 404 오류가 난다
+### GitHub Pages 주소로 들어갔는데 404 오류가 난다
 
 **원인** (여러 가지):
 - GitHub Pages가 아직 활성화되지 않은 경우
@@ -128,7 +124,7 @@ nav:
 
 ---
 
-#### `git push`할 때 인증 팝업이 뜬다
+### `git push`할 때 인증 팝업이 뜬다
 
 **원인**: Git for Windows에 포함된 GCM(Git Credential Manager)이 GitHub 로그인을 요청하는 것이다. 처음 `git push`할 때 한 번만 나타난다.
 
@@ -139,7 +135,7 @@ nav:
 
 ---
 
-#### `git push` 후 `rejected` 오류가 난다
+### `git push` 후 `rejected` 오류가 난다
 
 오류 메시지 예시:
 ```
@@ -156,7 +152,7 @@ git push origin main
 
 ---
 
-#### VSCode에서 Git 관련 기능이 보이지 않는다
+### VSCode에서 Git 관련 기능이 보이지 않는다
 
 **원인**: Git이 설치되지 않았거나, VSCode가 Git을 인식하지 못하는 경우다.
 
@@ -167,7 +163,7 @@ git push origin main
 
 ---
 
-#### commit 메시지를 잘못 입력했다 (아직 push 전)
+### commit 메시지를 잘못 입력했다 (아직 push 전)
 
 **원인**: commit에서 메시지를 잘못 입력  
 
@@ -178,9 +174,9 @@ git commit --amend -m "올바른 메시지"
 
 ---
 
-### GitHub 웹 · 기타
+## GitHub 웹 · 기타
 
-#### Repository를 Private으로 만들었더니 GitHub Pages가 작동하지 않는다
+### Repository를 Private으로 만들었더니 GitHub Pages가 작동하지 않는다
 
 **원인**: GitHub Free 계정에서는 Private repository에 GitHub Pages를 사용할 수 없다.
 
@@ -189,20 +185,22 @@ repository는 Private으로 유지하면서 web site만 공개하는 것은 유�
 
 ---
 
-#### 파일 이름에 한글이 들어갔더니 오류가 난다
+### 파일 이름에 한글이 들어갔더니 오류가 난다
 
 **원인**: 일부 시스템에서 파일 이름의 한글이 제대로 처리되지 않는 경우가 있다.
 
 **해결**: 파일 이름은 영문 소문자, 숫자, 하이픈(`-`)만 사용한다.
 ```
+
 좋은 예: my-first-note.md, python-study.md
 나쁜 예: 내첫노트.md, 파이썬공부.md
+
 ```
 
 ---
 ---
 
-## 용어 정리(Glossary)
+# 용어 정리(Glossary)
 
 ---
 
