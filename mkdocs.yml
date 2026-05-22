@@ -33,9 +33,9 @@ theme:
   favicon: assets/favicon.png             # local에서 안보일 수 있다.
 
   features:
-    - navigation.path          # 본문 위 breadcrumb만 킨다.
-    - navigation.sections      # 사이드 바의 목록이 펼쳐져있는 상태로
-    - navigation.indexs        # 폴더명을 클릭하면 내부 index.md로 이동(폴더가 있을 경우만)
+    - navigation.path          # 본문 위 breadcrumb만 킨다. (docs를 폴더 구조로 만들고 test)
+    - navigation.sections      # 사이드 바의 목록이 펼쳐져있는 상태로 (docs를 폴더 구조로 만들고 test)
+    - navigation.indexs        # 폴더명을 클릭하면 내부 index.md로 이동 (docs를 폴더 구조로 만들고 test)
     - navigation.top           # 스크롤 내리면 맨 위로 버튼 표시
     - navigation.footer        # 페이지 하단에 이전/다음 페이지 버튼
     # - navigation.tabs          # 상단에 탭 메뉴 표시

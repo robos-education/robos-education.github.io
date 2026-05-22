@@ -126,3 +126,9 @@
   background-color: var(--md-footer-meta-bg);
   color: var(--md-footer-text) !important;
 }
+
+/* 저작권(copyright) 가운데 정렬 */
+.md-copyright {
+  width: 100%;
+  text-align: center;
+}
