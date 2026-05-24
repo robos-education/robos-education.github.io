@@ -1,11 +1,11 @@
-# Chapter 3. GitHub Page(GitHub 가입, Repository 생성, Web Page Deploy)
+# 📚 Chapter 3. GitHub Page(GitHub 가입, Repository 생성, Web Page Deploy)
 
 GitHub에 가입하고, 파일을 올리고, 실제 URL로 접근한다.
 지난 Chapter에서 작성한 01_calcu_03.html을 배포한다.
 
 ---
 
-## 1. GitHub 가입
+## 📖 1. GitHub 가입
 
 [github.com](https://github.com)
 
@@ -23,7 +23,7 @@ GitHub에 가입하고, 파일을 올리고, 실제 URL로 접근한다.
 
 ---
 
-## 2. Repository 생성
+## 📖 2. Repository 생성
 
 가입 후 로그인 상태에서 진행한다.
 
@@ -43,7 +43,7 @@ Repository가 생성되면 파일이 없는 빈 상태의 페이지가 나타난
 
 ---
 
-## 3. 파일 업로드 (GitHub 웹에서 직접)
+## 📖 3. 파일 업로드 (GitHub 웹에서 직접)
 
 Repository 화면에서 직접 파일을 올린다.
 
@@ -59,7 +59,7 @@ Repository 화면에서 직접 파일을 올린다.
 
 ---
 
-## 4. GitHub Pages 설정
+## 📖 4. GitHub Pages 설정
 
 Repository에 올린 HTML 파일을 웹 페이지로 공개한다.
 
@@ -81,7 +81,7 @@ Your site is live at https://<username>.github.io/calculator/<파일명>.html
 > 페이지가 열리지 않는다면 상단 Actions 탭에서 현재 배포한 Workflow가 초록색으로 바뀌었는지 확인한다.
 ---
 
-## 5. Web Browser에서 확인
+## 📖 5. Web Browser에서 확인
 
 표시된 URL을 복사해서 브라우저 주소창에 붙여넣는다.
 
@@ -94,7 +94,7 @@ https://<username>.github.io/<repository-name>/01_calcu_03.html
 ```
 
 ---
-## 6. index.html과 URL
+## 📖 6. index.html과 URL
 
 GitHub Pages는 폴더 URL로 접근할 때 `index.html`을 자동으로 찾아서 열어준다.
 만일 `index.html`이 있으면 URL에서 파일 이름을 생략할 수 있다.
@@ -131,7 +131,7 @@ https://<username>.github.io/calculator/
 ```
 
 
-## Git으로 배포하는 방법 (참고)
+## 📖 7. Git으로 배포하는 방법 (참고)
 
 위에서는 GitHub 웹 화면에서 직접 파일을 올렸다.
 실제 개발 현장에서는 **Git**이라는 도구를 사용해서 터미널에서 파일을 올린다.
@@ -141,7 +141,7 @@ GitHub는 Git으로 관리되는 파일을 저장하는 원격 저장소다.
 
 터미널에서 아래 순서로 진행한다.
 
-### Git 설치 확인
+### 📄 Git 설치 확인
 
 ```bash
 git --version
@@ -150,14 +150,14 @@ git --version
 버전 정보가 출력되면 설치된 상태다.
 설치가 안 되어 있으면 [git-scm.com](https://git-scm.com)에서 다운로드한다.
 
-### 최초 1회: 사용자 정보 등록
+### 📄 최초 1회: 사용자 정보 등록
 
 ```bash
 git config --global user.name "이름"
 git config --global user.email "이메일"
 ```
 
-### Repository 연결 · 파일 올리기
+### 📄 Repository 연결 · 파일 올리기
 
 ```bash
 # 1. 작업 폴더로 이동
@@ -196,7 +196,7 @@ Push가 완료되면 GitHub repository에 파일이 올라간다.
 
 ---
 
-## 정리
+## ✅ 8. 정리
 
 | 단계 | 내용 |
 |------|------|
