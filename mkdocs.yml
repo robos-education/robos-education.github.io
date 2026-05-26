@@ -1,4 +1,4 @@
-site_name: My Tech Log
+site_name: "삼산 Robos: Robos-Education "
 site_url: https://robo-education.github.io/
 site_description: GitHub Page + MkDocs 설정 Note
 site_author: deoneo@naver.com
@@ -33,15 +33,18 @@ theme:
   favicon: assets/favicon.png             # local에서 안보일 수 있다.
 
   features:
+    # - navigation.tabs           # 상단 탭 메뉴
+    # - navigation.expand        # 모든 메뉴 확장
     - navigation.path          # 본문 위 breadcrumb만 킨다. (docs를 폴더 구조로 만들고 test)
-    - navigation.sections      # 사이드 바의 목록이 펼쳐져있는 상태로 (docs를 폴더 구조로 만들고 test)
-    - navigation.indexs        # 폴더명을 클릭하면 내부 index.md로 이동 (docs를 폴더 구조로 만들고 test)
+    # - navigation.sections      # 사이드 바 메뉴에서 폴더가 하나의 독립 section으로 인식 (docs를 폴더 구조로 만들고 test) 토글이 없어짐
+    # - navigation.indexes        # 폴더명을 클릭하면 내부 index.md로 이동 (docs를 폴더 구조로 만들고 test)
     - navigation.top           # 스크롤 내리면 맨 위로 버튼 표시
     - navigation.footer        # 페이지 하단에 이전/다음 페이지 버튼
     # - navigation.tabs          # 상단에 탭 메뉴 표시
     - search.highlight         # 검색 결과 강조
     - search.suggest           # 검색 자동완성
     - content.code.copy        # 코드 블록에 복사 버튼 추가
+  
 
 extra_css:
   - stylesheets/extra.css
@@ -67,9 +70,10 @@ extra:
 # 3. 플러그인 설정 (★redirect★)
 plugins:
   - search
+  - awesome-nav:
   - redirects:
       redirect_maps:
-        'index.md': '01_intro.md'
+        'index.md': 'make_webpage_and_markdown/01_webpage.md'
   - toggle-sidebar:
       toggle_button: toc            # toc만 toggle ( 목차만 ), (toc, navigation, all)
       show_toc_by_default: true     # 처음엔 보이게

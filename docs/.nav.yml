@@ -1,0 +1,12 @@
+# docs/.nav.yml
+# title: 전체 문서 목록 # 효과 없음
+# nav:
+#   - Home: index.md
+#   - Web Blog 만들기(Gihub, Markdown-MkDocs): make_webpage_and_markdown
+#   - Python class 심화(작성중): python_class
+
+# 서브 폴더의 .nav.yml에서 별명을 설정한다.
+nav:
+  - index.md
+  - make_webpage_and_markdown
+  - python_class

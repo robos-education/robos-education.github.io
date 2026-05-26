@@ -1,0 +1,8 @@
+# docs/make_webpage_and_markdown/.nav.yml
+# 1. folder 자체의 메뉴 이름
+title: Web Blog 만들기(Gihub, Markdown-MkDocs)
+
+# 2. 메뉴 순서 지정
+# nav:
+#   - web page의 개념: 01_webpage.md
+#   - github 시작하기: 02_github.md
