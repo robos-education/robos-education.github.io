@@ -1,15 +1,17 @@
-# Chapter 4. Markdown 기초  
-
+# 📚 Chapter 4. Markdown과 MkDocs
 
 Web page는 HTML 형식으로 작성되어야 하지만 형식과 문법이 매우 복잡하다.   
 GitHub는 Markdown으로 작성된 문서를 HTML로 변환하는 기능을 지원하기 때문에,  
 여러 분야에서 널리 사용되는 Markdown으로 문서를 작성한다.   
 이후 GitHub의 변환 기능을 이용해 web page로 배포한다.
 
-Markdown은 `#`, `*`, `-` 같은 기호로 문서 서식을 표현하는 언어다.   
-문법이 단순해서 글 쓰는 데 집중할 수 있고, 읽고 쓰는 속도가 빠르다.
+## 📖 1. Markdown과 MkDocs 
+ 
+Markdown은 Text만으로 문서의 구조(제목, 목록, 링크등의 서식)를 만드는 언어이다.  
+`#`, `*`, `-` 같은 기호로 문서 서식을 표현하며 복잡한 규칙이 없어 HTML, PDF등 다른 형식으로 쉽게 변환할 수 있다.
+우리가 보고 있는 AI Chat의 화면이 Markdown 기반이다.
 
-알아두면 여러 곳에서 바로 쓸 수 있다.
+아래와 같은 곳에서 널리 사용되고 있다.
 
 - **GitHub** — README 파일, 이슈, 코멘트가 모두 Markdown이다.
 - **Notion · Obsidian** — 메모와 문서 작성에 Markdown 문법을 사용한다.
@@ -19,9 +21,24 @@ Markdown은 `#`, `*`, `-` 같은 기호로 문서 서식을 표현하는 언어�
 우리가 만들 Web Page도 Markdown으로 작성하려고 한다.   
 `.md` 파일을 읽어서 HTML 페이지로 변환하고(MkDocs 이용), 그 결과가 web site로 배포된다.
 
+
+## 📖 2. MkDocs 
+
+그리고 **MkDocs**라는 도구를 사용하면 편리하게 Web Site를 만들고 관리할 수 있다.
+
+[MkDocs](https://www.mkdocs.org/)
+
+```
+내가 쓴 Markdown 파일  ── MkDocs ──▶  예쁜 웹사이트  ── GitHub Pages ──▶  인터넷 공개
+```
+
+- Markdown으로 작성된 file을 자동으로 Web Page로 변환해 준다.
+- 내용을 설명하는 Document 형식의 디자인을 자동으로 구성해 준다.
+- GitHub Pages와 연결이 쉽다.
+
 ---
 
-## 문법 실습
+## 📖 3. Markdown 연습
 
 VSCode를 열고 `practice.md` 파일을 새로 만든다.
 
@@ -128,3 +145,4 @@ def hello():
 Markdown 문법은 기호 몇 가지만 알면 된다.   
 지금 배운 내용으로 대부분의 Web Page를 작성할 수 있다.   
 다음 Chapter에서는 MkDocs를 설치하고, 이 `.md` 파일들이 실제 web site로 어떻게 만들어지는지 알아보자.
+

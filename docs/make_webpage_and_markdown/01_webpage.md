@@ -1,4 +1,4 @@
-# 📚 Chapter 1. Web Page 만들기
+# 📚 Chapter 1. Web Site와 Web Page
 
 HTML Page를 직접 만들어본다.  
 HTML, CSS, JavaScript의 개념 이해

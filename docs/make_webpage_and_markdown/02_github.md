@@ -1,11 +1,11 @@
-# 📚 Chapter 2. GitHub와 Tech Log 시작하기(GitHub, Markdown과 MkDocs)
+# 📚 Chapter 2. GitHub와 Web Blog 시작하기(GitHub, Markdown과 MkDocs)
 
 Chapter 1에서 작성한 HTML을 Web에 배포하는 과정을 알아본다.(github.com을 사용)  
 GitHub에 대하여 알아보고, 자신의 Web Blog를 만들기 위한 설정을 알아본다.
 
 ---
 
-## 📖 1. GitHub란?
+## 📖 1. GitHub.com
 
 GitHub는 Code를 Cloud에 저장하고 관리하는 Platform으로 크게 세 가지 역할을 한다.
 
@@ -46,41 +46,154 @@ calculator.html  ── push ──▶  repository  ──▶  https://내아이
 
 ---
 
-## 📖 3. Markdown과 MkDocs 
-### 📄 Markdown이란?
- 
-Markdown은 Text만으로 문서의 구조(제목, 목록, 링크등의 서식)를 만드는 언어이다.  
-복잡한 규칙이 없어 HTML, PDF등 다른 형식으로 쉽게 변환할 수 있다.
-우리가 보고 있는 AI Chat의 화면이 Markdown 기반이다.
- 
-| 내가 쓰는 것 | 화면에 보이는 것 |
-|------------|---------------|
-| `# 제목` | 큰 제목 |
-| `**굵게**` | **굵게** |
-| `- 항목` | • 항목 (목록) |
-| ` ```코드``` ` | `코드` (코드 강조) |
+## 📖 3. GitHub 가입, Repository 생성, Web Page Deploy
 
+GitHub에 가입하고, 파일을 올리고, 실제 URL로 접근한다.
+지난 Chapter에서 작성한 01_calcu_03.html을 배포한다.
 
-공부한 내용을 **Markdown**으로 기록하고 **GitHub Pages**로 배포하려고 한다.
-이 때, **MkDocs**라는 도구를 사용하면 편리하게 Web Site를 만들고 관리할 수 있다.
+---
+
+### 📄 1. GitHub 가입
+
+[github.com](https://github.com)
+
+1. **Sign up** 클릭
+2. 이메일 주소 입력
+3. 비밀번호 설정
+4. username 입력 (영문, 숫자, 하이픈만 사용 가능)
+5. 이메일 인증 완료
+
+> username은 로그인 계정으로 사용할 수 있고, 나중에 변경할 수 있다.  
+> 하지만 접속 URL과 Web Site의 URL로 사용되기 때문에 신중하게 생성해야 한다.  
+> github.com 접속 page 오른쪽 상단 프로필 클릭 → Settings → 왼쪽 메뉴의 Account → Change username 클릭
+> **username은 URL에 그대로 사용된다.**  
+> 예: username이 `robos-education`이면 내 GitHub Pages 주소는 `https://robos-education.github.io` 가 된다.
+
+---
+
+### 📄 2. Repository 생성
+
+가입 후 로그인 상태에서 진행한다.
+
+1. 오른쪽 위 **+** 버튼 → **New repository** 클릭
+2. 아래 항목을 입력한다
+
+   - Repository name: `calculator`
+   - Description: (선택) 간단한 설명 입력
+   - choose visibility: Public / Private: **Public** 선택
+   - Add a README file: 체크 **안 함**
+
+3. **Create repository** 클릭
+
+Repository가 생성되면 파일이 없는 빈 상태의 페이지가 나타난다.  
+
+![Create Repository](images/github_new_repository.png) 
+
+---
+
+### 📄 3. 파일 업로드 (GitHub 웹에서 직접)
+
+Repository 화면에서 직접 파일을 올린다.
+
+1. **uploading an existing file** 링크 클릭  
+   (또는 **Add file** → **Upload files**)
+2. `01_calcu_03.html` 파일을 드래그하거나 **choose your files**로 선택
+3. 파일이 목록에 나타나면 아래로 스크롤
+4. **Commit changes** 버튼 클릭
+
+파일이 **저장소(Repository)**에 추가된다.  
+
+![Create Repository](images/github_uploading.png) 
+
+---
+
+### 📄 4. GitHub Pages 설정
+
+Repository에 올린 HTML 파일을 웹 페이지로 공개한다.
+
+1. Repository 상단 탭에서 **Settings** 클릭
+2. 왼쪽 사이드바에서 **Pages** 클릭
+3. **Source** 항목에서 **Deploy from a branch** 선택
+4. Branch를 **main**, 폴더를 **/ (root)** 로 설정
+5. **Save** 클릭
+
+저장 후 페이지를 새로고침하면 상단에 URL이 표시된다.  
+
+![Create Repository](images/github_uploading.png)   
 
 ```
-내가 쓴 Markdown 파일  ── MkDocs ──▶  예쁜 웹사이트  ── GitHub Pages ──▶  인터넷 공개
+Your site is live at https://<username>.github.io/calculator/<파일명>.html
 ```
 
-### 📄 MkDocs
-- Markdown으로 작성된 file을 자동으로 Web Page로 변환해 준다.
-- 내용을 설명하는 Document 형식의 디자인을 자동으로 구성해 준다.
-- GitHub Pages와 연결이 쉽다.
+> URL이 나타나기까지 1~2분 정도 걸릴 수 있다.
+> 페이지가 열리지 않는다면 상단 Actions 탭에서 현재 배포한 Workflow가 초록색으로 바뀌었는지 확인한다.
+---
+
+### 📄 5. Web Browser에서 확인
+
+표시된 URL을 복사해서 브라우저 주소창에 붙여넣는다.
+
+`01_calcu_03.html`이 나타나면 배포가 완료된다.
+
+URL 구조는 다음과 같다.
+
+```
+https://<username>.github.io/<repository-name>/01_calcu_03.html
+```
+
+---
+### 📄 6. index.html과 URL
+
+GitHub Pages는 폴더 URL로 접근할 때 `index.html`을 자동으로 찾아서 열어준다.
+만일 `index.html`이 있으면 URL에서 파일 이름을 생략할 수 있다.
+
+| 파일 이름 | 접근 URL |
+|-----------|----------|
+| `01_calcu_03.html` | `https://<username>.github.io/calculator/01_calcu_03.html` |
+| `index.html` | `https://<username>.github.io/calculator/` |
+
+---
+
+### 📄 index.html 만들기
+
+1. Repository code 화면에서 **Add file** → **Create new file** 클릭
+2. 파일 이름 입력란에 `index.html` 입력
+3. 아래 코드를 입력한다
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>홍길동의 페이지</title>
+</head>
+<body>
+  <h1>안녕하세요, 홍길동입니다.</h1>
+  <p><a href="01_calcu_03.html">계산기 바로가기</a></p>
+</body>
+</html>
+```
+4. 아래로 스크롤 → **Commit changes** 클릭
+
+Commit이 완료되면 아래 URL로 접근할 수 있다.
+```
+https://<username>.github.io/calculator/
+```
 
 ---
 
 ## ✅ 4. 정리
 
-Markdown과 MkDocs를 이용하면 우리의 자료를 Text file과 비슷한 format으로 보관하고 관리할 수 있고  
-Web Page로의 변환도 쉽게 할 수 있다.
-
 - GitHub: 코드 저장소 + 버전 관리 + 협업 도구
-- GitHub Pages: 내 파일을 무료 웹사이트로 만들어 주는 기능
-- MkDocs: Markdown 파일을 웹사이트로 변환해 주는 도구
+- GitHub Pages: 내 파일을 무료 웹사이트로 만들어 주는 기능  
+
+    | 단계 | 내용 |
+    |------|------|
+    | GitHub 가입 | 이메일로 계정 생성, username 설정 |
+    | Repository 생성 | Public, 이름은 `calculator` |
+    | 파일 업로드 | 웹 화면에서 `01_calcu_03.html` 업로드 |
+    | GitHub Pages 설정 | Settings → Pages → main branch |
+    | 확인 | `https://<username>.github.io/calculator/01_calcu_03.html` |
+    | index 설정 | index.html 생성 `https://<username>.github.io/calculator/` |  
+    
 ---
