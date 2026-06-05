@@ -5,7 +5,7 @@ GitHub는 Markdown으로 작성된 문서를 HTML로 변환하는 기능을 지�
 여러 분야에서 널리 사용되는 Markdown으로 문서를 작성한다.   
 이후 GitHub의 변환 기능을 이용해 web page로 배포한다.
 
-## 📖 1. Markdown과 MkDocs 
+## 📖 1. Markdown
  
 Markdown은 Text만으로 문서의 구조(제목, 목록, 링크등의 서식)를 만드는 언어이다.  
 `#`, `*`, `-` 같은 기호로 문서 서식을 표현하며 복잡한 규칙이 없어 HTML, PDF등 다른 형식으로 쉽게 변환할 수 있다.

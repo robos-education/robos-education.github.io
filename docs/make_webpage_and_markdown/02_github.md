@@ -1,4 +1,4 @@
-# 📚 Chapter 2. GitHub와 Web Blog 시작하기(GitHub, Markdown과 MkDocs)
+# 📚 Chapter 2. GitHub와 Web Blog 시작하기
 
 Chapter 1에서 작성한 HTML을 Web에 배포하는 과정을 알아본다.(github.com을 사용)  
 GitHub에 대하여 알아보고, 자신의 Web Blog를 만들기 위한 설정을 알아본다.
@@ -40,8 +40,8 @@ GitHub의 **GitHub Pages**기능을 이용하면 개인의 Web Site를 구성할
 Repository에 올린 파일을 자동으로 웹사이트를 만들어 주는 Hosting Service다.
 
 ```
-내 컴퓨터                         GitHub                     인터넷
-calculator.html  ── push ──▶  repository  ──▶  https://내아이디.github.io/calculator
+내 컴퓨터                       GitHub                       인터넷
+calculator.html  ── push ──▶  repository(calculator)  ──▶  https://내아이디.github.io/calculator
 ```
 
 ---
@@ -119,7 +119,7 @@ Repository에 올린 HTML 파일을 웹 페이지로 공개한다.
 
 저장 후 페이지를 새로고침하면 상단에 URL이 표시된다.  
 
-![Create Repository](images/github_uploading.png)   
+![Create Repository](images/github_deploy.png)   
 
 ```
 Your site is live at https://<username>.github.io/calculator/<파일명>.html
@@ -195,5 +195,5 @@ https://<username>.github.io/calculator/
     | GitHub Pages 설정 | Settings → Pages → main branch |
     | 확인 | `https://<username>.github.io/calculator/01_calcu_03.html` |
     | index 설정 | index.html 생성 `https://<username>.github.io/calculator/` |  
-    
+
 ---

@@ -1,6 +1,6 @@
 # docs/make_webpage_and_markdown/.nav.yml
 # 1. folder 자체의 메뉴 이름
-title: Web Blog 만들기(Gihub, Markdown-MkDocs)
+title: Web Blog 만들기(Gihub, MkDocs)
 
 # 2. 메뉴 순서 지정
 # nav:
