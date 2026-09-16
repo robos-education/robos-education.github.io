@@ -1,11 +1,11 @@
-# Chapter 7 · 실전 프로젝트 + AI 바이브코딩
+# Chapter 7. 실전 프로젝트 + AI 바이브코딩
 
 ---
 
 ## 수업 목표
 
 - 지금까지 배운 class 개념을 종합하여 하나의 프로젝트를 완성한다.
-- AI에게 정확한 요구사항을 전달하는 방법을 익힌다.
+- AI에게 정확한 요구사항을 전달하는 방법을 학습한다.
 - AI가 만든 코드를 분석하고 검증할 수 있다.
 
 ---
@@ -13,9 +13,10 @@
 ## 프로젝트 1: 텍스트 RPG 전투 게임
 
 - Game Flow
-- 핵심 class 직접 구현
-- 직접 구현한 class 구조와 게임 흐름 등을 이용하여 AI에게 전달할 요구사항 작성
-- AI가 만든 코드 검증 (Verification Checklist)
+- 핵심 class 직접 구현  
+- 직접 구현한 class를 Test하기 위한 검증표와 검증 code를 AI와 함께 만들고 Test 한다.
+- 직접 구현한 class 구조와 Game Flow 등을 이용하여 AI에게 Game Code 요구(요구 사항 작성하기)
+- AI가 만든 코드 검증 (Verification Checklist 요구하기)
 - Test
 
 ---
@@ -70,6 +71,11 @@ AI에게 요구사항을 전달하기 전에 핵심 class를 직접 구현한다
 ### 요구사항 작성 예시
 
 ```
+class code 검증하기
+첨부한 class code를 test하기 위한 검증항목 List와 검증 code 만들어 줘
+한번에 test하는 형태 말고 한 항목씩 검증할 수 있도록 분리하여 만들어 줘
+
+Game code 만들기
 첨부한 class code를 사용하여 text RPG combat game을 만들어 줘.
 
 Game Flow:

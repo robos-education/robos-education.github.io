@@ -9,7 +9,7 @@ GitHub에 대하여 알아보고, 자신의 Web Blog를 만들기 위한 설정�
 
 GitHub는 Code를 Cloud에 저장하고 관리하는 Platform으로 크게 세 가지 역할을 한다.
 
-### 📄 ① 저장소 (Repository)
+### 📄 저장소 (Repository)
 코드와 파일을 Cloud에 저장하는 공간  
 
 ```
@@ -17,7 +17,7 @@ GitHub는 Code를 Cloud에 저장하고 관리하는 Platform으로 크게 세 �
                  ◀── pull ──
 ```
 
-### 📄 ② 버전 관리 (Version Control)
+### 📄 버전 관리 (Version Control)
 파일을 수정할 때마다 **이전 상태를 기억**시킬 수 있다. 
 따라서 언제든지 과거의 상태로 돌아갈 수 있다.
 
@@ -28,13 +28,13 @@ GitHub는 Code를 Cloud에 저장하고 관리하는 Platform으로 크게 세 �
 여러 개발자가 동시에 각기 다른 수정을 병렬 작업으로 시행할 수 있다.  
 - Pull Request & Merge: 개별 Branch에서 Test가 끝난 Code를 Main Code에 합치는 과정  
 
-### 📄 ③ 협업 (Collaboration)
+### 📄 협업 (Collaboration)
 Repository에 저장된 내용을 공개·비공개로 설정할 수 있으며,
 공개 설정 시 인터넷이 되는 곳이라면 어디서든 누구나 참여하여 협업할 수 있다.
 
 ---
 
-## 📖 2. GitHub Pages — 무료 웹 호스팅
+### 📄 GitHub Pages — 무료 웹 호스팅
 
 GitHub의 **GitHub Pages**기능을 이용하면 개인의 Web Site를 구성할 수 있다.
 Repository에 올린 파일을 자동으로 웹사이트를 만들어 주는 Hosting Service다.
@@ -46,14 +46,14 @@ calculator.html  ── push ──▶  repository(calculator)  ──▶  https
 
 ---
 
-## 📖 3. GitHub 가입, Repository 생성, Web Page Deploy
+## 📖 2. GitHub 가입, Repository 생성, Web Page Deploy
 
 GitHub에 가입하고, 파일을 올리고, 실제 URL로 접근한다.
 지난 Chapter에서 작성한 01_calcu_03.html을 배포한다.
 
 ---
 
-### 📄 1. GitHub 가입
+### 📄 GitHub 가입
 
 [github.com](https://github.com)
 
@@ -71,7 +71,7 @@ GitHub에 가입하고, 파일을 올리고, 실제 URL로 접근한다.
 
 ---
 
-### 📄 2. Repository 생성
+### 📄 Repository 생성
 
 가입 후 로그인 상태에서 진행한다.
 
@@ -91,7 +91,7 @@ Repository가 생성되면 파일이 없는 빈 상태의 페이지가 나타난
 
 ---
 
-### 📄 3. 파일 업로드 (GitHub 웹에서 직접)
+### 📄 파일 업로드 (GitHub 웹에서 직접)
 
 Repository 화면에서 직접 파일을 올린다.
 
@@ -107,7 +107,7 @@ Repository 화면에서 직접 파일을 올린다.
 
 ---
 
-### 📄 4. GitHub Pages 설정
+### 📄 GitHub Pages 설정
 
 Repository에 올린 HTML 파일을 웹 페이지로 공개한다.
 
@@ -129,7 +129,7 @@ Your site is live at https://<username>.github.io/calculator/<파일명>.html
 > 페이지가 열리지 않는다면 상단 Actions 탭에서 현재 배포한 Workflow가 초록색으로 바뀌었는지 확인한다.
 ---
 
-### 📄 5. Web Browser에서 확인
+### 📄 Web Browser에서 확인
 
 표시된 URL을 복사해서 브라우저 주소창에 붙여넣는다.
 
@@ -142,7 +142,7 @@ https://<username>.github.io/<repository-name>/01_calcu_03.html
 ```
 
 ---
-### 📄 6. index.html과 URL
+### 📄 index.html과 URL
 
 GitHub Pages는 폴더 URL로 접근할 때 `index.html`을 자동으로 찾아서 열어준다.
 만일 `index.html`이 있으면 URL에서 파일 이름을 생략할 수 있다.
@@ -182,7 +182,7 @@ https://<username>.github.io/calculator/
 
 ---
 
-## ✅ 4. 정리
+## ✅ 3. 정리
 
 - GitHub: 코드 저장소 + 버전 관리 + 협업 도구
 - GitHub Pages: 내 파일을 무료 웹사이트로 만들어 주는 기능  

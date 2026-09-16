@@ -39,6 +39,8 @@
         # calculate_damage(attack, defense): 공격량과 방어량을 계산해서 실제 적용되는 damage를 return하는 utility
     # ==================================================== 
 
+
+
     # class Warrior에서 ===================================
     # 특징: HP와 방어력이 높음
     # self.__rage = 0 분노 게이지가 축척되면 강력한 특수 능력을 할 수 있다.
@@ -154,7 +156,6 @@ class Character:
 
         while self.__exp >= self.level * 100: # 레벨이 두 단계 올라갈 수도 있다.
             self.__level_up()
-
 
     def __level_up(self):
 

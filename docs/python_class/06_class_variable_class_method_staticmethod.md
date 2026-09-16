@@ -1,4 +1,4 @@
-# Chapter 6 · class variable, class method, staticmethod
+# Chapter 6. class variable, classmethod, staticmethod
 
 **소재:** 게임 캐릭터 시스템  
 **핵심 질문:** "모든 Character가 공유하는 data는 어디에 저장하는가?"
@@ -50,7 +50,7 @@ print(f"최대 레벨: {Character.max_level}")        # 99
 
 # instance에서 접근 시도
 print(f"총 캐릭터 수: {hero.total_count}")         # 3
-hero.total_count = 10                              # hero에 새로운 instance variable이 생성된 것
+hero.total_count = 10                             # hero에 새로운 instance variable이 생성된 것
 print(f"총 캐릭터 수: {hero.total_count}")         # 10 ← Character.total_count와는 별개의 변수
 ```
 ---

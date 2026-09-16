@@ -1,4 +1,4 @@
-# Chapter 3 · Special Methods (Dunder Methods)
+# Chapter 3. Special Methods (Dunder Methods)
 
 **소재:** 게임 캐릭터 시스템  
 **핵심 질문:** "내가 만든 object를 print하면 왜 이상한 게 나올까?"

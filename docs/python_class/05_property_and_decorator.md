@@ -1,4 +1,4 @@
-# Chapter 5 · @property와 Decorator
+# Chapter 5. @property와 Decorator
 
 **소재:** 게임 캐릭터 시스템  
 **핵심 질문:** "hero.get_hp() 매번 쓰기 귀찮은데, hero.hp처럼 쓸 수는 없을까?"

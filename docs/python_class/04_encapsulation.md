@@ -1,4 +1,4 @@
-# Chapter 4 · Encapsulation
+# Chapter 4. Encapsulation
 
 **소재:** 게임 캐릭터 시스템  
 **핵심 질문:** "HP를 -999로 바꿔버리면 어떡하지?"

@@ -1,4 +1,4 @@
-# Chapter 2 · 오버라이딩 심화 (Overriding Advanced)
+# Chapter 2. 오버라이딩 심화 (Overriding Advanced)
 
 **소재:** 게임 캐릭터 성장 시스템  
 **핵심 질문:** "부모 클래스의 기능을 상속받았는데, 바꾸고 싶으면 어떻게 하지?"
