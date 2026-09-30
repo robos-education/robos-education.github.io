@@ -61,6 +61,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true         # 제목에 아이콘 붙혀준다.
+      toc_depth: 2            # 오른쪽 목차 표시 깊이
   - footnotes
 
 copyright: Copyright &copy; 2026 삼산 Robos

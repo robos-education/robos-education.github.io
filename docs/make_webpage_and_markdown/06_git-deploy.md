@@ -10,8 +10,7 @@
 GitHub Pages는 repository의 이름을 사용자 이름으로 만들면 <username>.github.io 형식의 URL로 web site를 만들어 준다.  
 따라서 우리도 사용자 이름과 같은 repository를 만든다.
 
-**repository 이름 규칙:**  
-`<username>.github.io`
+**repository 이름 규칙:**  `<username>.github.io`
 
 예를 들어 GitHub의 username(로그인 메일 계정을 말하는 것이 아니다.)이 `hong-gildong`이면 `hong-gildong.github.io`으로 web site의 주소가 설정된다.
 
@@ -191,7 +190,15 @@ Actions가 배포를 완료하려면 Pages 설정이 맞아야 한다.
 | ✅ 초록 체크 | 성공 |
 | ❌ 빨간 X | 실패 |
 
-실패한 경우 항목을 클릭하면 어떤 단계에서 오류가 났는지 확인할 수 있다.
+실패한 경우 항목을 클릭하면 어떤 단계에서 오류가 났는지 확인할 수 있다.  
+
+```markdown
+!!! info "📌 배포 방식에 대한 참고 사항"
+    * **이와 같이 ** `gh-pages` 브랜치를 경유하여 배포하는 ** 방식은 기본 배포 방식**이다.  
+    * 하지만 GitHub Actions 기술이 발전하면서 보다 효율적인 방식이 가능해 졌다.  
+    * 설정이 모두 끝나면 새롭게 추천하는 방식인 GitHub Actions 방식으로 업그레이드 한다.  
+    * [Chapter 11. 배포 방식 업그레이드](../11_whats-news_01/) 
+```
 
 ---
 
@@ -283,6 +290,7 @@ control /name Microsoft.CredentialManager       # Windows 자격 증명 관리�
 
 다음 push 단계에서 로그인 창이 다시 뜨면 정상적으로 삭제된 것이다.
 
+---  
 
 ## ✅ 3. 정리
 

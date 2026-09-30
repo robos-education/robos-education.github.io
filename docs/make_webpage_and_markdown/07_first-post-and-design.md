@@ -1,16 +1,16 @@
-# Chapter 8. Note Posting과 MkDocs Design
+# 📚 Chapter 7. Note Posting과 MkDocs Design
 
 실제 contents를 GitGub page에 posting하고 MkDocs 설정과 CSS를 이용하여 Web site를 디자인한다.
 
 ---
 
-## 1. 지금까지 작성한 note 준비
+## 📖 1. 지금까지 작성한 note 준비
 
-Chapter 1부터 학습한 Note을 모두 markdown을 변경하여 Web Site에 Posting한다.
+Chapter 1부터 학습한 Note을 모두 markdown file로 변환한다.
 
 ---
 
-## 2. AI chat으로 Markdown 변환
+### 📄 AI chat으로 Markdown 변환
 
 note 내용을 AI chat에 붙여넣고 Markdown으로 변환을 요청한다.
 
@@ -25,7 +25,7 @@ note 내용을 AI chat에 붙여넣고 Markdown으로 변환을 요청한다.
 
 ---
 
-## 3. VSCode에서 확인·수정
+### 📄 VSCode에서 확인·수정
 
 1. VSCode에서 `docs/` 폴더 안에 새 파일을 만든다.
    - 파일명 예시: `chapter1-html.md`, `html-note.md`
@@ -35,7 +35,7 @@ note 내용을 AI chat에 붙여넣고 Markdown으로 변환을 요청한다.
 
 ---
 
-## 4. GitHub 웹에서 commit → 사이트 확인
+## 📖 2. GitHub 웹에서 commit → 사이트 확인
 
 1. GitHub에서 `<username>.github.io` repository로 이동한다.
 2. `docs/` 폴더로 들어간다.
@@ -47,11 +47,12 @@ note 내용을 AI chat에 붙여넣고 Markdown으로 변환을 요청한다.
 
 ```
 https://<username>.github.io
-```
+```  
+** Local Terminal에서 Git을 사용할 경우에는 생략 **  
 
 ---
 
-## 6. mkdocs.yml 디자인
+## 📖 3. mkdocs.yml 디자인
 
 MkDocs의 설정 테스트는 GitHub에서 직접할 경우 배포시간을 매번 기다려야 하기 때문에 이전 Chapter에서 학습한 `mkdocs serve` local에서 한다.  
 
@@ -60,7 +61,7 @@ MkDocs의 설정 테스트는 GitHub에서 직접할 경우 배포시간을 매�
 
 ---
 
-### 사이트 기본 정보
+### 📄 사이트 기본 정보
 
 최상위 key인 site_name, theme, nav든 순서와 상관없이 작성할 수 있다.  
 
@@ -72,7 +73,7 @@ site_author: 홍길동                           # HTML의 <meta> 태그로 들�
 
 ---
 
-### 색상 바꾸기
+### 📄 색상 바꾸기
 
 ```yaml
 
@@ -91,7 +92,7 @@ theme:
 
 ---
 
-### 밝은/어두운 테마 토글 추가
+### 📄 밝은/어두운 테마 토글 추가
 
 ```yaml
 theme:
@@ -113,7 +114,7 @@ theme:
 
 ---
 
-### 폰트 바꾸기
+### 📄 폰트 바꾸기
 
 ```yaml
 theme:
@@ -127,7 +128,7 @@ theme:
 
 ---
 
-### 로고·파비콘 넣기
+### 📄 로고·파비콘 넣기
 
 ```yaml
 theme:
@@ -139,7 +140,7 @@ theme:
 
 ---
 
-### features 옵션
+### 📄 features 옵션
 
 필요한 것만 골라서 넣는다.
 
@@ -156,7 +157,7 @@ theme:
 
 ---
 
-### 커스텀 CSS
+### 📄 커스텀 CSS
 
 mkdocs.yml의 palette, font로 바꿀 수 있는 세부 style은 CSS로 직접 조정할 수 있다.
 mkdocs.yml에 아래를 추가한다.
@@ -209,7 +210,7 @@ Web Browser의 개발자 도구를 통해 HTML 코드를 분석하면서 실험�
 
 ---
 
-### 메뉴 구성 (nav)
+### 📄 메뉴 구성 (nav)
 
 ```yaml
 nav:
@@ -222,7 +223,7 @@ nav:
 
 ---
 
-### 저작권 표시
+### 📄 저작권 표시
 
 ```yaml
 copyright: Copyright &copy; 2025 홍길동
@@ -230,7 +231,7 @@ copyright: Copyright &copy; 2025 홍길동
 
 ---
 
-## 7. 완성되면 push → 배포
+## 📖 4. 완성되면 push → 배포
 
 디자인이 마음에 들면 변경 사항을 GitHub에 올리고 배포한다.
 
@@ -257,7 +258,7 @@ https://<username>.github.io
 
 ---
 
-## terminal 작업이 유용한 이유
+## 📖 5. terminal 작업이 유용한 이유
 
 이번 챕터에서 GitHub 웹과 terminal을 함께 사용해 봤다.  
 웹 메뉴로도 대부분의 작업이 가능하지만, terminal에서 직접 명령을 입력하면 더 편한 상황이 있다.
